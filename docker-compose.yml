@@ -1,0 +1,9 @@
+services:
+  whatsapp_helpdesk_web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: whatsapp_helpdesk_web
+    restart: unless-stopped
+    ports:
+      - "8091:80"
